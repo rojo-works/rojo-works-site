@@ -74,6 +74,7 @@
 
     .brand-name {
       font-size: 13px;
+      font-weight: 400;
       letter-spacing: 0.22em;
       color: var(--text);
     }
@@ -83,6 +84,19 @@
       line-height: 2;
       letter-spacing: 0.04em;
       color: var(--text);
+    }
+
+    .groups {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.28em;
+      color: var(--text-sub);
     }
 
     .links {
@@ -133,7 +147,7 @@
   <main class="container">
     <section class="brand">
       <img class="logo" src="assets/logo.svg" alt="路 R O J O 上" width="96">
-      <p class="brand-name">路 R O J O 上</p>
+      <h1 class="brand-name">路 R O J O 上</h1>
     </section>
 
     <section class="about">
@@ -141,12 +155,19 @@
       <p>Articles · Dialog · Small Rental Property</p>
     </section>
 
-    <nav class="links" aria-label="connect">
-      <a href="https://app.rojo.works/">Apps app.rojo.works</a>
-      <a href="https://makerworld.com/ja/@user_612155057" target="_blank" rel="noopener">3D Model MakerWorld</a>
-      <a href="mailto:mail@rojo.works">mail@rojo.works</a>
-      <a href="https://www.instagram.com/rojo.works/" target="_blank" rel="noopener">Instagram @rojo.works</a>
-    </nav>
+    <div class="groups">
+      <nav class="links" aria-labelledby="works-label">
+        <h2 class="section-label" id="works-label">WORKS</h2>
+        <a href="https://app.rojo.works/">Apps app.rojo.works</a>
+        <a href="https://makerworld.com/ja/@user_612155057" target="_blank" rel="noopener">3D Model MakerWorld</a>
+      </nav>
+
+      <nav class="links" aria-labelledby="contact-label">
+        <h2 class="section-label" id="contact-label">CONTACT</h2>
+        <a href="mailto:mail@rojo.works">mail@rojo.works</a>
+        <a href="https://www.instagram.com/rojo.works/" target="_blank" rel="noopener">Instagram @rojo.works</a>
+      </nav>
+    </div>
   </main>
 
   <footer class="footer">
