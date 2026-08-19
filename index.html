@@ -120,6 +120,17 @@
       outline: none;
     }
 
+    /* 親リンクとその配下を1組にまとめ、配下は1段下げる */
+    .link-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .links a.sub {
+      padding-left: 16px;
+    }
+
     .footer {
       width: 100%;
       max-width: 480px;
@@ -158,8 +169,10 @@
     <div class="groups">
       <nav class="links" aria-labelledby="works-label">
         <h2 class="section-label" id="works-label">WORKS</h2>
-        <a href="https://app.rojo.works/">Apps app.rojo.works</a>
-        <a href="https://mono.rojo.works/">mono Catalog mono.rojo.works</a>
+        <div class="link-group">
+          <a href="https://app.rojo.works/">Apps app.rojo.works</a>
+          <a class="sub" href="https://mono.rojo.works/">mono Catalog mono.rojo.works</a>
+        </div>
         <a href="https://makerworld.com/ja/@user_612155057" target="_blank" rel="noopener">3D Model MakerWorld</a>
       </nav>
 
@@ -172,7 +185,7 @@
   </main>
 
   <footer class="footer">
-    <p>Cookie の使用、アクセス解析、外部トラッキングは行っていません。</p>
+    <p>このサイトでは、Cookie の使用、アクセス解析、外部トラッキングを行っていません。</p>
     <p>© 2026 路上</p>
   </footer>
 </body>

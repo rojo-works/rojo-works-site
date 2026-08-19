@@ -14,7 +14,7 @@
 ├── assets/
 │   ├── logo.svg                     # 跡 ROJO ロゴ（viewBox最適化済み）
 │   └── fonts/
-│       ├── line-seed-jp-regular.woff2  # LINE Seed JP（subset・約21KB）
+│       ├── line-seed-jp-regular.woff2  # LINE Seed JP（subset・約23KB）
 │       └── OFL.txt                     # 上のフォントのライセンス全文
 ├── .gitignore
 └── README.md
